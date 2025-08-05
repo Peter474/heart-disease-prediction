@@ -1,29 +1,116 @@
 # heart-disease-prediction
-# ❤️ Heart Disease Prediction - Full ML Pipeline
+markdown
+# ❤️ Heart Disease Prediction - Machine Learning Project
 
-This project is a complete machine learning pipeline built using the **Heart Disease UCI Dataset**. It includes everything from data preprocessing to model deployment using Streamlit and Ngrok.
+This project uses machine learning techniques to analyze and predict the risk of heart disease using the UCI Heart Disease dataset.
 
----
+## 🧠 Project Overview
 
-## 📌 Objectives
-
-- Clean and preprocess the heart disease dataset.
-- Apply PCA for dimensionality reduction.
-- Perform feature selection using statistical and ML-based techniques.
-- Train and evaluate multiple classification models:
-  - Logistic Regression
-  - Decision Tree
-  - Random Forest
-  - Support Vector Machine (SVM)
-- Apply unsupervised learning:
-  - K-Means Clustering
-  - Hierarchical Clustering
-- Perform hyperparameter tuning using GridSearchCV.
-- Build a Streamlit UI for live predictions.
-- Deploy the model with Ngrok (bonus).
-- Host the project on GitHub.
+- Perform data preprocessing and cleaning
+- Dimensionality reduction using PCA
+- Feature selection using statistical and ML-based techniques
+- Train supervised models: Logistic Regression, Decision Tree, Random Forest, SVM
+- Apply unsupervised clustering: K-Means, Hierarchical Clustering
+- Hyperparameter tuning using GridSearchCV
+- Build a simple Streamlit web interface for real-time predictions (Bonus)
+- Deploy the Streamlit app using Ngrok (Bonus)
 
 ---
 
-## 📂 Project Structure
+## 📊 Dataset
+
+- **Source:** [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease)
+- **Attributes:** Age, Sex, Chest Pain, Blood Pressure, Cholesterol, etc.
+- **Target:** Presence (1) or absence (0) of heart disease
+
+---
+
+## 🧪 Models Used
+
+### ✅ Supervised Learning
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- SVM
+
+### 🔍 Unsupervised Learning
+- K-Means Clustering
+- Hierarchical Clustering
+
+---
+
+## 🧰 Tools & Libraries
+
+- Python
+- Pandas, NumPy, Matplotlib, Seaborn
+- Scikit-learn
+- Streamlit
+- Pyngrok
+- Joblib
+
+---
+
+## 🚀 Instructions to Run
+
+### 1. Clone the project:
+```bash
+git clone https://github.com/your-username/heart-disease-prediction.git
+cd heart-disease-prediction
+````
+
+### 2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit App:
+
+```bash
+streamlit run app.py
+```
+
+### 4. (Optional) Deploy with Ngrok:
+
+```bash
+ngrok authtoken ngrok config add-authtoken 30s8SOuyOUBLFTHwPioAxXcAjWs_DteQVmAB3VPoB8XMKZtA
+ngrok http 8501
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+heart-disease-prediction/
+│
+├── app.py                     # Streamlit app
+├── heart.ipynb                # Main notebook with all steps
+├── heart_disease_model.pkl    # Trained model
+├── scaler.pkl                 # Scaler used in preprocessing
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+```
+
+---
+
+## ✅ Final Deliverables
+
+* Cleaned dataset
+* PCA reduced data
+* Supervised and unsupervised models
+* Evaluation reports
+* Optimized model
+* .pkl model file
+* Streamlit UI (Bonus)
+* Ngrok deployment (Bonus)
+* GitHub repository with all code
+
+---
+
+## 🧑‍💻 Author
+
+Peter Emad
+
+
 
